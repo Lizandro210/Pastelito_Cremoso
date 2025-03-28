@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #ff9a9e, #fad0c4);
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            color: #4a4a4a;
+            scroll-behavior: smooth;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            width: 200px;
+            margin-left: 20px;
+            vertical-align: middle;
+        }
+
+        h1.page-title {
+            color: #fff;
+            background: linear-gradient(135deg, #ff6f91, #ff9671);
+            padding: 20px 40px;
+            border-radius: 20px;
+            display: inline-block;
+            margin-top: 30px;
+            font-size: 48px;
+            text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        h1.page-title:hover {
+            transform: scale(1.05);
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 1.8;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #ff6f91, #ff9671);
+            color: white;
+            padding: 18px 40px;
+            font-size: 20px;
+            font-weight: bold;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            text-decoration: none;
+            margin-top: 40px;
+            transition: transform 0.3s ease;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+        }
+
+        .navbar, .mvv-menu {
+            background: rgba(255, 105, 180, 0.9);
+            border-radius: 15px;
+            margin: 20px auto;
+            max-width: 1000px;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .navbar a, .mvv-menu a {
+            color: white;
+            padding: 20px 35px;
+            text-decoration: none;
+            font-size: 22px;
+            transition: background 0.3s ease;
+        }
+
+        .navbar a:hover, .mvv-menu a:hover {
+            background: #ff1493;
+            border-radius: 10px;
+        }
+
+        .slogan-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 40px;
+            flex-direction: column;
+        }
+
+        .slogan-box {
+            background: rgba(255, 105, 180, 0.85);
+            color: white;
+            padding: 30px 40px;
+            border-radius: 15px;
+            font-size: 28px;
+            font-weight: bold;
+            box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .product-menu, .cupcake-menu {
+            overflow: hidden;
+            white-space: nowrap;
+            margin-top: 30px;
+        }
+
+        .product-item {
+            display: inline-block;
+            margin: 0 15px;
+            vertical-align: top;
+        }
+
+        .product-item img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        /*Estilos para cupcakes*/
+        .cupcake-item img{
+            object-fit: contain;
+        }
+
+        .product-item p, .cupcake-item p {
+            font-size: 18px;
+            margin: 0;
+        }
+
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-100%); }
+        }
+
+        .product-menu, .cupcake-menu {
+            animation: scroll 15s linear infinite;
+        }
+
+        .menu-image {
+            width: 300px;
+            display: block;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="page-title">Pastelito Cremoso</h1>
+    <div class="navbar">
+        <a href="Pastelito cremoso.html">Inicio</a>
+        <a href="productos.html">Productos</a>
+        <a href="contacto.html">Contacto</a>
+    </div>
+
+    <div class="slogan-container">
+        <div class="slogan-box">Tu sabor favorito, siempre fresco.</div>
+        <img src="pastelito.jpeg" alt="Logo de Pastelito Cremoso" class="logo">
+    </div>
+
+    <div class="mvv-menu">
+        <a href="Pastelito cremoso.html#mision">Misión</a>
+        <a href="Pastelito cremoso.html#vision">Visión</a>
+        <a href="Pastelito cremoso.html#valores">Valores</a>
+    </div>
+
+    <div class="container">
+        <h1>Nuestros Productos</h1>
+        <p>Descubre nuestra deliciosa variedad de productos:</p>
+
+        <img src="Menu.jpeg" alt="Menú de productos" class="menu-image">
+
+        <h2>Productos Principales</h2>
+        <div class="product-menu">
+            <div class="product-item">
+                <img src="cuernitos.jpeg" alt="Cuernitos">
+                <p>Cuernitos</p>
+            </div>
+            <div class="product-item">
+                <img src="concha de chocolate.jpeg" alt="Concha de Chocolate">
+                <p>Concha de Chocolate</p>
+            </div>
+            <div class="product-item">
+                <img src="polvorones.jpeg" alt="Polvorones">
+                <p>Polvorones</p>
+            </div>
+            <div class="product-item">
+                <img src="panque.jpeg" alt="Panque">
+                <p>Panque</p>
+            </div>
+        </div>
+
+        <h2>Cupcakes</h2>
+        <div class="cupcake-menu">
+            <div class="product-item cupcake-item">
+                <img src="Cupcake Vainilla.jpeg" alt="Cupcake Vainilla">
+                <p>Cupcake Vainilla</p>
+            </div>
+            <div class="product-item cupcake-item">
+                <img src="Cupcake Chocolate.jpeg" alt="Cupcake Chocolate">
+                <p>Cupcake Chocolate</p>
+            </div>
+        </div>
+
+        <a href="Pastelito cremoso.html" class="btn">Volver a la página principal</a>
+    </div>
+
+</body>
+</html>
